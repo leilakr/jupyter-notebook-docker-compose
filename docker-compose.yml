@@ -9,7 +9,7 @@ services:
         - ${LOCAL_SSL_CERTS}:/etc/ssl/notebook
       ports:
         - ${PORT}:8888
-      container_name:   jupyter_notebook
+      container_name:   blissful_ritchie
       command: "start-notebook.sh \
         --NotebookApp.password=${ACCESS_TOKEN} \
         --NotebookApp.certfile=/etc/ssl/notebook/jupyter.pem"
